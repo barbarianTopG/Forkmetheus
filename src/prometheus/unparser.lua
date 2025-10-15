@@ -464,7 +464,7 @@ function Unparser:unparseExpression(expression, tabbing)
 	end
 	
 	if(expression.kind == AstKind.StringExpression) then
-		return "\"" .. escapeString(expression.value) .. "\"";
+		return "\"" .. expression.value .. "\"";
 	end
 	
 	if(expression.kind == AstKind.NilExpression) then
